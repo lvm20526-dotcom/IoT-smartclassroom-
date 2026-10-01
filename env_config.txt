@@ -1,0 +1,16 @@
+# =================================================================
+# FILE CẤU HÌNH BIẾN MÔI TRƯỜNG (.env)
+# Cho dự án: Occupancy-Aware Smart Classroom (Project 09)
+# =================================================================
+
+# 1. Cổng lắng nghe của Server Node.js (Render tự động cấp ngầm)
+PORT=3000
+
+# 2. Chuỗi kết nối Database Neon PostgreSQL
+# Thay chuỗi bên dưới bằng Connection String thực tế từ Neon Dashboard (https://neon.tech)
+DATABASE_URL=postgresql://user:password@ep-cool-sample-123456.us-east-2.aws.neon.tech/neondb?sslmode=require
+
+# 3. Cấu hình HiveMQ MQTT Broker
+MQTT_BROKER_URL=mqtt://broker.hivemq.com:1883
+MQTT_TOPIC_TELEMETRY=classroom/room9/telemetry
+MQTT_TOPIC_COMMAND=classroom/room9/command
